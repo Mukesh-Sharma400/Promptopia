@@ -13,13 +13,15 @@ const RootLayout = ({ children }) => (
       <link rel="icon" href="assets/images/logo.svg" sizes="any" />
     </head>
     <body>
-      <div className="main">
-        <div className="gradient" />
-      </div>
-      <main className="app">
-        <Nav />
-        {children}
-      </main>
+      <Provider>
+        <div className="main">
+          <div className="gradient" />
+        </div>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
+      </Provider>
     </body>
   </html>
 );
